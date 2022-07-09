@@ -1,0 +1,49 @@
+.planetData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imageContainer{
+    width:100%;
+    
+}
+
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    
+   
+}
+
+.overview{
+    width:min-content;
+    padding:100px;
+    padding-right:150px;
+}
+
+.overview h1{
+    width:300px;
+    padding-right:30px;
+}
+
+.overview span{
+    font-size:14px;
+    font-family: 'League Spartan', sans-serif;
+    color:var(--color-gray-light);
+    opacity:0.8;
+    margin-right: 10px;
+}
+
+.overview a{
+   font-size: 14px;
+   color:var(--color-white);
+   opacity:0.8;
+    font-weight: 400;
+   
+}
+
