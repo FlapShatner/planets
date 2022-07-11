@@ -26,6 +26,11 @@
 .header ul li a{
     text-decoration: none;
     color: var(--color-gray-light);
+    padding:20px 0;
+}
+
+.header ul li a:hover{
+    color:var(--color-white)
 }
 
 .logo h2{

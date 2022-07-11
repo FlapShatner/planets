@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './main.module.css'
 import Buttons from './buttons'
+import { FaExternalLinkSquareAlt } from 'react-icons/fa'
 
 export default function Main(props) {
   const { planet } = props
@@ -20,11 +21,22 @@ export default function Main(props) {
           <p>{planet.overview.content}</p>
           <div>
             <span>Source:</span>
-            <a href={planet.overview.source}>Wikipedia</a>
+            <Link url={planet.overview.source} />
           </div>
-          <Buttons planet={planet} />
         </div>
+        <Buttons planet={planet} page={'overview'} />
       </div>
     </section>
+  )
+}
+
+function Link(props) {
+  return (
+    <div className={styles.link}>
+      <a href={props.url}>Wikipedia</a>
+      <div className={styles.icon}>
+        <FaExternalLinkSquareAlt />
+      </div>
+    </div>
   )
 }

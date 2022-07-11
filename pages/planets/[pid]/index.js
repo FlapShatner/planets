@@ -1,18 +1,20 @@
 import getData from '../../../json/staticdata'
-import Header from '../../../components/header'
 import Main from '../../../components/main'
-
+import Internal from '../../../components/main/pages/internal'
+import Geology from '../../../components/main/pages/geology'
+import Layout from '../../../components/layout'
+import { useRouter } from 'next/router'
 export default function Planet(props) {
+  const router = useRouter()
+  const page = router.query.page
   const { planet } = props
 
   return (
-    <main>
-      <Header planet={planet} />
-      <Main planet={planet} />
-      <footer>
-        <div>Stat Boxes</div>
-      </footer>
-    </main>
+    <Layout planet={planet}>
+      {page === 'internal' && <Internal planet={planet} />}
+      {page === 'geology' && <Geology planet={planet} />}
+      {!page && <Main planet={planet} />}
+    </Layout>
   )
 }
 

@@ -8,20 +8,20 @@
 }           
 html, body {
   height: 100%;
-}
+} 
 body {
   --color-white: #fff;
   --color-black:#070724;
   --color-gray:#38384f;
   --color-gray-light:#838391;
-  --color-blue-light:#419ebb;            
-  --color-yellow:#eda249;
-  --color-purple:#6f2ed6;
-  --color-red-orange:#d14c32;
-  --color-red:#d83a34;
-  --color-orange:#cd5120;
-  --color-green:#1ec2a4;
-  --color-blue:#2d68f0;
+  --color-mercury:#419ebb;            
+  --color-venus:#eda249;
+  --color-earth:#6f2ed6;
+  --color-mars:#d14c32;
+  --color-jupiter:#d83a34;
+  --color-saturn:#cd5120;
+  --color-uranus:#1ec2a4;
+  --color-neptune:#2d68f0;
 
 
 background-color: var(--color-black);
@@ -52,7 +52,7 @@ h1{
 } 
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Antonio', sans-serif;
   font-weight: 500;
   line-height: 52px;
@@ -68,7 +68,7 @@ h3{
 }
 
 a, h4{
-  font-size: 11px;
+  font-size: 12px;
   font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   line-height: 25px;
@@ -78,7 +78,7 @@ a, h4{
 p{
   font-size: 14px;
   font-family: 'League Spartan', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 25px;
   opacity: 0.8;
  
