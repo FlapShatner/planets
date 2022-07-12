@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-   
+    padding: 20px 0;
     border: none;
     border-bottom:1px solid var(--color-gray);
 }
@@ -25,7 +25,7 @@
 .header ul li a{
     text-decoration: none;
     color: var(--color-gray-light);
-    padding:20px 0;
+    padding:40px 0;
 }
 
 .header ul li a:hover{
@@ -37,22 +37,26 @@
 
 .logo h2{
     color:var(--color-white);
-    font-size: 35px;
-    margin-left: 20px;
+    font-size: 30px;
+    margin-left: 30px;
 }
 
 @media (max-width: 800px) {
     .header{ 
         display: flex;
         flex-direction: column;
+        padding-top:15px;
     }
     .logo h2{
         font-size:25px;
-        margin-top:10px;
+        padding-bottom: 15px;
     }
 
     .header ul{
         padding:0 20px;
+    }
+    .header ul li a{
+        padding:7px 5px;
     }
 }
 

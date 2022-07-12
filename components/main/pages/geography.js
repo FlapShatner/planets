@@ -18,29 +18,25 @@ export default function Geography(props) {
     return (
       <section className={styles.planetData}>
         <div className={styles.imageContainer}>
-          <div id='planet' className={styles.image}>
-            <Image src={imagePath} alt='image' width={290} height={290} />
-          </div>
+          <img className={styles.image} src={imagePath} alt='image' />
+
           <div className={styles.overlay}>
             <Image src={overlay} alt='image' width={163} height={199} />
           </div>
         </div>
         <div className={styles.overview}>
-          <div className={styles.description}>
-            <h1>{name}</h1>
-            <p>{planet.geology.content}</p>
-            <div>
-              <span>Source:</span>
-              <Link url={planet.geology.source} />
+          <div className={styles.aside}>
+            <div className={styles.description}>
+              <h1>{name}</h1>
+              <p>{planet.geology.content}</p>
+              <div>
+                <span>Source:</span>
+                <Link url={planet.geology.source} />
+              </div>
             </div>
+            <Buttons planet={planet} page={'geology'} />
           </div>
-          <Buttons planet={planet} page={'geology'} />
         </div>
-        <style jsx>{`
-          #planet {
-            width: 260px;
-          }
-        `}</style>
       </section>
     )
   }

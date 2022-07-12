@@ -17,20 +17,20 @@ export default function Internal(props) {
     return (
       <section className={styles.planetData}>
         <div className={styles.imageContainer}>
-          <div className={styles.image}>
-            <Image src={imagePath} alt='image' width={290} height={290} />
-          </div>
+          <img className={styles.image} src={imagePath} alt='image' />
         </div>
         <div className={styles.overview}>
-          <div className={styles.description}>
-            <h1>{name}</h1>
-            <p>{planet.structure.content}</p>
-            <div>
-              <span>Source:</span>
-              <Link url={planet.structure.source} />
+          <div className={styles.aside}>
+            <div className={styles.description}>
+              <h1>{name}</h1>
+              <p>{planet.structure.content}</p>
+              <div>
+                <span>Source:</span>
+                <Link url={planet.structure.source} />
+              </div>
             </div>
+            <Buttons planet={planet} page={'internal'} />
           </div>
-          <Buttons planet={planet} page={'internal'} />
         </div>
       </section>
     )
