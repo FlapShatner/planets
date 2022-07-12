@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/planets/mercury',
+        destination: '/planets/earth',
         permanent: true,
       },
     ]
