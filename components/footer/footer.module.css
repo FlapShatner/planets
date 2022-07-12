@@ -38,6 +38,31 @@ div.box h2{
 
     div.container{
         padding:20px;
+    }
 
+    div.box p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    div.box{
+        width:100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    div.box p{
+        display: flex;
+        line-height: normal;
+        
+        align-self: center;
+        
     }
 }

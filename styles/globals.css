@@ -13,6 +13,7 @@ body {
   --color-white: #fff;
   --color-black:#070724;
   --color-gray:#38384f;
+  --color-gray-tran:hsla(240, 17%, 26%, .7 );
   --color-gray-light:#838391;
   --color-mercury:#419ebb;            
   --color-venus:#eda249;

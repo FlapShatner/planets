@@ -1,7 +1,9 @@
 import styles from './footer.module.css'
+import useMediaQuery from '../../hooks/useMediaQuery'
 
 export default function Footer(props) {
   const { planet } = props
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>

@@ -19,7 +19,6 @@
 
 .header ul li{
     margin-left: 20px;
-    padding:20px 0;
    
 }
 
@@ -30,11 +29,33 @@
 }
 
 .header ul li a:hover{
-    color:var(--color-white)
+    color:var(--color-white);
+    
 }
+
+
 
 .logo h2{
     color:var(--color-white);
     font-size: 35px;
     margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .header{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .logo h2{
+        font-size:25px;
+        margin-top:10px;
+    }
+
+    .header ul{
+        padding:0 20px;
+    }
+}
+
+@media (max-width:600px){
+
 }

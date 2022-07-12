@@ -1,18 +1,20 @@
 import getData from '../../../json/staticdata'
+
 import Main from '../../../components/main'
 import Internal from '../../../components/main/pages/internal'
-import Geology from '../../../components/main/pages/geology'
+import Geography from '../../../components/main/pages/geography'
 import Layout from '../../../components/layout'
 import { useRouter } from 'next/router'
+
 export default function Planet(props) {
   const router = useRouter()
   const page = router.query.page
-  const { planet } = props
+  const { planet, planetData } = props
 
   return (
-    <Layout planet={planet}>
+    <Layout planetData={planetData} planet={planet}>
       {page === 'internal' && <Internal planet={planet} />}
-      {page === 'geology' && <Geology planet={planet} />}
+      {page === 'geography' && <Geography planet={planet} />}
       {!page && <Main planet={planet} />}
     </Layout>
   )
@@ -26,6 +28,7 @@ export async function getStaticProps(ctx) {
   return {
     props: {
       planet,
+      planetData,
     },
   }
 }

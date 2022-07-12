@@ -26,7 +26,7 @@ export default function Buttons(props) {
         </Link>
       </button>
       <button className='geology'>
-        <Link href={`${link}?page=geology`}>
+        <Link href={`${link}?page=geography`}>
           <div>
             <p>03</p>
             <h4>SURFACE GEOGRAPHY</h4>
